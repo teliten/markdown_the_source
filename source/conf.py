@@ -1,11 +1,11 @@
 import recommonmark
 from recommonmark.transform import AutoStructify
 from recommonmark.parser import CommonMarkParser
-from bs4 import BeautifulSoup
-source_parsers = {
+#from bs4 import BeautifulSoup
+#source_parsers = {
 #   '.md': CommonMarkParser
-   '.html': BeautifulSoup
-}
+#   '.html': BeautifulSoup
+#}
 
 import sphinx_bootstrap_theme
 
