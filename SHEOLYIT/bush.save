@@ -1,0 +1,53 @@
+#!/bin/bash
+export PATH=$PATH:/root/.cargo/bin
+
+cd /root/atham/SHEOLYIT/BLOG
+mdbook build
+cd /root/atham/SHEOLYIT/ALEDOBSOP
+mdbook build
+cd /root/atham/SHEOLYIT/MATCHBOX20
+mdbook build
+
+sed -i -e 's/print.html/bloback.html/g' /root/atham/SHEOLYIT/BLOG/book/*.html
+mv /root/atham/SHEOLYIT/BLOG/book/print.html /root/atham/SHEOLYIT/BLOG/book/bloback.html
+cp /root/atham/SHEOLYIT/BLOG/book/*.html /root/atham/SHEOLYIT/pp
+
+sed -i -e 's/print.html/matchbox.html/g' /root/atham/SHEOLYIT/MATCHBOX20/book/*.html
+mv /root/atham/SHEOLYIT/MATCHBOX20/print.html /root/atham/SHEOLYIT/MATCHBOX20/book/matchbox.html
+cp /root/atham/SHEOLYIT/MATCHBOX20/book/*.html /root/atham/SHEOLYIT/pp
+
+
+sed -i -e 's/print.html/alobsop.html/g' /root/atham/SHEOLYIT/ALEDOBSOP/book/*.html
+mv /root/atham/SHEOLYIT/ALEDOBSOP/book/print.html /root/atham/SHEOLYIT/ALEDOBSOP/book/alobsop.html
+cp /root/atham/SHEOLYIT/ALEDOBSOP/book/*.html /root/atham/SHEOLYIT/pp
+
+cd /root/atham/SHEOLYIT/SHEOLYIT
+mdbook build
+sed -i -e 's/print.html/sheolyit.html/g' /root/atham/SHEOLYIT/SHEOLYIT/book/*.html
+mv /root/atham/SHEOLYIT/SHEOLYIT/book/print.html /root/atham/SHEOLYIT/SHEOLYIT/book/sheolyit.html
+
+cp /root/atham/SHEOLYIT/SHEOLYIT/book/*.html /root/atham/SHEOLYIT/pp
+
+##preprocess lol
+cd /root/atham/SHEOLYIT/pp
+for file in *; do
+#echo "- [$file](./$file)" >> SUMMARY.md
+mv $file tempfile
+cat /root/atham/SHEOLYIT/SHEOLYIT/pphead.md >> $file
+cat tempfile >> $file
+cat /root/atham/SHEOLYIT/SHEOLYIT/ppfoot.md >> $file
+done
+#sed -i -e 's/\<i id\=\"sidebar-toggle\"/\<script src=\"https:\/\/addsearch.com\/js/\?key=aef0cdbf75731a213cbcd92387a7a4a8\">\<\/script><i id=\"sidebar-toggle\"/g' *.html
+#sed -i -e 's/\"sidebar\">/\"sidebar\"><script src="https:\/\/addsearch.com\/js\/?key=05d8959843df656d13a70fd037dc07b6"><\/script>/g' *.html
+sed -i -e 's/\"sidebar\">/\"sidebar\"><script src="https:\/\/addsearch.com\/js\/?key=9412b8157c566b0279a66e627b5deaa7"><\/script>/g' *.html
+
+sed -i -e 's/<div id=\"content\" class=\"content\">/<div id=\"content\" class=\"content\"><center><p>I am accepting char<a href=\"http\:\/\/tithehe.lamc.la\">itable dona<\/a>tions,.<\/p><\/center>/g' *.html
+cp /root/atham/SHEOLYIT/pp/* /root/atham
+cd /root/atham
+
+#tar cf html.tar *.html
+#tar rf /root/atham/html.tar /root/atham/*.pdf
+cp /root/atham/N8SRADIN.html /root/atham/index.html
+#sed -i -e 's/ADIODAS - /You are in the Matrix.  I answer \"how come?\" and \"prove it!\"/g' /root/atham/index.html
+
+git add *.html

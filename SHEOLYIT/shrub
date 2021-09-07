@@ -1,0 +1,20 @@
+cd /root/atham/
+for file in *.html; do
+
+#echo "- [$file](./$file)" >> SUMMARY.md
+
+cp /root/atham/SHEOLYIT/SHEOLYIT/TMPL_ERROR FILE_ERROR
+sed -i -e 's/ROAR/"'${file}'"/g' /root/atham/FILE_ERROR
+
+DEROR=$(printf '%q' $(cat /root/atham/FILE_ERROR))
+echo $DEROR
+echo sed -i -e "s/REPLACE_ME_ERROR/${DEROR}/g" $file
+#$awk 'BEGIN{getline l < "/root/atham/FILE_ERROR"}/localhost/{gsub("REPLACE_ME_ERROR",l)}1'  $file > tmp
+mv tmp $file
+done
+
+#$cizall
+
+
+
+

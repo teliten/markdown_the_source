@@ -1,0 +1,85 @@
+#!/bin/bash
+## AT SHIXA AND JUDE; CME DONATE QUICK
+export PATH=$PATH:/root/.cargo/bin
+
+cd /root/atham/SHEOLYIT/BLOG
+mdbook build
+cd /root/atham/SHEOLYIT/ALEDOBSOP
+mdbook build
+cd /root/atham/SHEOLYIT/MATCHBOX20
+mdbook build
+
+sed -i -e 's/print.html/bloback.html/g' /root/atham/SHEOLYIT/BLOG/book/*.html
+mv /root/atham/SHEOLYIT/BLOG/book/print.html /root/atham/SHEOLYIT/BLOG/book/bloback.html
+cp /root/atham/SHEOLYIT/BLOG/book/*.html /root/atham/SHEOLYIT/pp
+
+sed -i -e 's/print.html/matchbox.html/g' /root/atham/SHEOLYIT/MATCHBOX20/book/*.html
+mv /root/atham/SHEOLYIT/MATCHBOX20/print.html /root/atham/SHEOLYIT/MATCHBOX20/book/matchbox.html
+cp /root/atham/SHEOLYIT/MATCHBOX20/book/*.html /root/atham/SHEOLYIT/pp
+
+
+sed -i -e 's/print.html/alobsop.html/g' /root/atham/SHEOLYIT/ALEDOBSOP/book/*.html
+mv /root/atham/SHEOLYIT/ALEDOBSOP/book/print.html /root/atham/SHEOLYIT/ALEDOBSOP/book/alobsop.html
+cp /root/atham/SHEOLYIT/ALEDOBSOP/book/*.html /root/atham/SHEOLYIT/pp
+
+cd /root/atham/SHEOLYIT/SHEOLYIT
+mdbook build
+sed -i -e 's/print.html/sheolyit.html/g' /root/atham/SHEOLYIT/SHEOLYIT/book/*.html
+mv /root/atham/SHEOLYIT/SHEOLYIT/book/print.html /root/atham/SHEOLYIT/SHEOLYIT/book/sheolyit.html
+
+cd /root/atham/SHEOLYIT/SHEOLYIT
+
+rm book/KISMET.html
+rm book/OUITHEPPL.html
+rm book/BLISS.html
+rm book/KEYNES2.html
+rm book/JERUSALEM.html
+rm book/2017-09-29-duck-duck-golden-egg.html
+
+cp /root/atham/SHEOLYIT/SHEOLYIT/book/*.html /root/atham/SHEOLYIT/pp
+
+##preprocess lol
+#sed -i -e 's/\<i id\=\"sidebar-toggle\"/\<script src=\"https:\/\/addsearch.com\/js/\?key=aef0cdbf75731a213cbcd92387a7a4a8\">\<\/script><i id=\"sidebar-toggle\"/g' *.html
+#sed -i -e 's/\"sidebar\">/\"sidebar\"><script src="https:\/\/addsearch.com\/js\/?key=05d8959843df656d13a70fd037dc07b6"><\/script>/g' *.html
+sed -i -e 's/\"sidebar\">/\"sidebar\"><script src="https:\/\/addsearch.com\/js\/?key=9412b8157c566b0279a66e627b5deaa7"><\/script>/g' *.html
+echo "ERROR"
+sed -i -e 's/<div id=\"content\" class=\"content\">/<div id=\"content\" class=\"content\"><center><p>I am accepting char<a href=\"http\:\/\/tithehe.lamc.la\">itable dona<\/a>tions,. <br>ETH\: 0x66e2871ef39334962fb75ce34407f825d67ec434 \| BTC\: 38B6vGaqNvMyTtoFEZPmNvMS7icV6ZnPMm \| DAI\: 0x6Fc8F9A462A854Ab5933b44070Cb3899eB8C3045<\/p><\/center>REPLACE_ME_ERROR/g' *.html
+
+
+#<br><br><div id=\"disqus_thread\"><\/div><script>var disqus_config = function \(\) { this.page.url = ${file}; this.page.identifier = ${file};}; \(function\(\) { var d = document, s = d.createElement(\'script\'); s.src = \'https:\/\/dotty-sign2r-jenmar.disqus.com\/embed.js\'; s.setAttribute\(\'data-timestamp\', +new Date\(\)\); \(d.head || d.body\).appendChild\(s\); }\)\(\); <\/script><script type=\"text\/javascript\" src=\".\/pagead2.googlesyndication.com\/pagead\/show_ads.js\"><br>/g' *.html
+echo "ERROR"
+cp /root/atham/SHEOLYIT/pp/* /root/atham
+#for file in *; do
+##
+# echo $@|gpg -s -a --passphrase-fd 0 $file
+
+#done
+cd /root/atham
+
+#tar cf html.tar *.html
+#tar rf /root/atham/html.tar /root/atham/*.pdf
+cp /root/atham/N8SRADIN.html /root/atham/index.html
+#sed -i -e 's/ADIODAS - /You are in the Matrix.  I answer \"how come?\" and \"prove it!\"/g' /root/atham/index.html
+
+cd /root/atham/
+for file in *.html; do
+
+#echo "- [$file](./$file)" >> SUMMARY.md
+mv $file tempfile
+cat /root/atham/SHEOLYIT/SHEOLYIT/pphead.md >> $file
+tail -n 46 tempfile > t2
+
+#head -n $(( $(wc -l tempfile | awk '{print $1}') - 46 )) > t1
+head -n -46 tempfile > t1
+
+cat t1 >> $file
+cat /root/atham/SHEOLYIT/SHEOLYIT/ppfoot.md >> $file
+cat t2 >> $file
+
+cp /root/atham/SHEOLYIT/SHEOLYIT/TMPL_ERROR FILE_ERROR
+sed -i -e 's/ROAR/${file}/g' FILE_ERROR
+sed -i -e "s/REPLACE_ME_ERROR/$(sed 's:/:\\/:g' FILE_ERROR)/" $file
+
+done
+
+#git add *.html

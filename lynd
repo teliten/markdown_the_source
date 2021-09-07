@@ -1,0 +1,45 @@
+sed -i -e 's/keynes.hallowed.gq/fromthemachine.org\/KEYNES2.html/g' *.md
+
+sed -i -e 's/meetdaeyeora.fromthemachine.org/gmass.co/g' *.md
+sed -i -e 's/hadragonbreath.blogspot.com/fromthemachine.org/g' *.md
+sed -i -e 's/serdfromthemachine.org/fromthemachine.org/g' *.md
+sed -i -e 's/sfromthemachine.org/fromthemachine.org/g' *.md
+sed -i -e 's/www.unduecoercion.org/fromthemachine.org/g' *.md
+sed -i -e 's/unduecoercion.org/fromthemachine.org/g' *.md
+sed -i -e 's/www.unduecoercion.com/fromthemachine.org/g' *.md
+sed -i -e 's/bygod.pcriot.com/fromthemachine.org/g' *.md
+sed -i -e 's/unduecoercion.com/fromthemachine.org/g' *.md
+sed -i -e 's/matches2adamah.github.io/fromthemachine.org/g' *.md
+sed -i -e 's/matchbox2earth.github.io/fromthemachine.org/g' *.md
+#matches2adamah.github.io
+sed -i -e 's/deror.reallyhim.com/fromthemachine.org\/2017-06-09-i-scream-i-roar-is-today-day-earth.html/g' *.md
+sed -i -e 's/houseinsky.tk/fromthemachine.org\/HOUSEINSKY.html/g' *.md
+sed -i -e 's/itsuni.tk/fromthemachine.org\/TAYLOR.html/g' *.md
+sed -i -e 's/neterson.tk/fromthemachine.org\/ERANDSON.html/g' *.md
+sed -i -e 's/minorityreport.tk/fromthemachine.org\/OCADSWAY.html/g' *.md
+sed -i -e 's/heavens.cf/fromthemachine.org\/OMEALFHT.html/g' *.md
+sed -i -e 's/erandson.tk/fromthemachine.org\/ERANDSON.html/g' *.md
+sed -i -e 's/burningbush.tk/fromthemachine.org\/HASHEMESHB.html/g' *.md
+sed -i -e 's/whoiscoming.reallyhim.com/gmass.co/g' *.md
+sed -i -e 's/youdontknowthehalfofit.devilsadvocate.tk/gmass.co/g' *.md
+
+sed -i -e 's/suez.fromthemachine.org/fromthemachine.org/g' *.md
+sed -i -e 's/aftertheome.ga/fromthemachine.org/g' *.md
+sed -i -e 's/totheome.ga/fromthemachine.org/g' *.md
+sed -i -e 's/isome.ga/fromthemachine.org/g' *.md
+sed -i -e 's/en.reallyhim.com/fromthemachine.org/g' *.md
+sed -i -e 's/matchbox20.bitbucket.io/fromthemachine.org/g' *.md
+sed -i -e 's/matchbox20.lamc.la/fromthemachine.org/g' *.md
+sed -i -e 's/matchbox.lamc.la/fromthemachine.org/g' *.md
+sed -i -e 's/http\:\/\/www.lamc.la/http\:\/\/fromthemachine.org/g' *.md
+sed -i -e 's/http\:\/\/m.lamc.la/http\:\/\/fromthemachine.org/g' *.md
+sed -i -e 's/http\:\/\/lamc.la/http\:\/\/fromthemachine.org/g' *.md
+sed -i -e 's/http\:\/\/www.fromthemachine.org/http\:\/\/fromthemachine.org/g' *.md
+sed -i -e 's/reallythim.com/reallyhim.com/g' *.md
+sed -i -e 's/reallyhimk.com/reallyhim.com/g' *.md
+sed -i -e 's/jesus.reallyhim.com/reallyhim.com/g' *.md
+sed -i -e 's/http\:\/\/reallyhim.com/http\:\/\/fromthemachine.org/g' *.md
+sed -i -e 's/http\:\/\/www.reallyhim.com/http\:\/\/fromthemachine.org/g' *.md
+sed -i -e 's/\.html\//\.html\?/g' *.md
+sed -i -e 's/\.htm\//\.htm\?/g' *.md
+sed -i -e 's/http\:\/\/fromthemachine.org/\./g' *.md
