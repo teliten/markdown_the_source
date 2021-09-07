@@ -7,7 +7,7 @@ from recommonmark.parser import CommonMarkParser
 #   '.html': BeautifulSoup
 #}
 
-import sphinx_bootstrap_theme
+#import sphinx_bootstrap_theme
 
 # Configuration file for the Sphinx documentation builder.
 #
