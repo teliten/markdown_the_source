@@ -1,3 +1,14 @@
+import recommonmark
+from recommonmark.transform import AutoStructify
+from recommonmark.parser import CommonMarkParser
+from bs4 import BeautifulSoup
+source_parsers = {
+#   '.md': CommonMarkParser
+   '.html': BeautifulSoup
+}
+
+import sphinx_bootstrap_theme
+
 # Configuration file for the Sphinx documentation builder.
 #
 # This file only contains a selection of the most common options. For a full
@@ -48,8 +59,17 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = 'alabaster'
+source_suffix = ['.rst', '.md', '.html']
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+def setup(app):
+    app.add_config_value('recommonmark_config', {
+            'enable_math': True,
+            'enable_eval_rst': True,
+            'enable_auto_doc_ref': True,
+            'auto_code_block': True,
+            }, True)
+    app.add_transform(AutoStructify)

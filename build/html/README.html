@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>&lt;no title&gt; &#8212; FROM THE MACHINE . ORG 3.11 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <p>&lt;div align=”center”&gt;</p>
+<p>&lt;img src=”<a class="reference external" href="https://beta.requarks.io/svg/logo.svg">https://beta.requarks.io/svg/logo.svg</a>” alt=”Wiki.js” width=”375” /&gt;</p>
+<p>[![Release](<a class="reference external" href="https://img.shields.io/github/release/Requarks/wiki.svg?style=flat&amp;maxAge=3600)](https://github.com/Requarks/wiki/releases">https://img.shields.io/github/release/Requarks/wiki.svg?style=flat&amp;maxAge=3600)](https://github.com/Requarks/wiki/releases</a>)
+[![License](<a class="reference external" href="https://img.shields.io/badge/license-AGPLv3-blue.svg?style=flat)](https://github.com/requarks/wiki/blob/master/LICENSE">https://img.shields.io/badge/license-AGPLv3-blue.svg?style=flat)](https://github.com/requarks/wiki/blob/master/LICENSE</a>)
+[![Backers on Open Collective](<a class="reference external" href="https://opencollective.com/wikijs/backers/badge.svg">https://opencollective.com/wikijs/backers/badge.svg</a>)](#backers)
+[![Sponsors on Open Collective](<a class="reference external" href="https://opencollective.com/wikijs/sponsors/badge.svg">https://opencollective.com/wikijs/sponsors/badge.svg</a>)](#sponsors)
+[![Downloads](<a class="reference external" href="https://img.shields.io/github/downloads/Requarks/wiki/total.svg?style=flat)](https://www.npmjs.com/package/wiki.js">https://img.shields.io/github/downloads/Requarks/wiki/total.svg?style=flat)](https://www.npmjs.com/package/wiki.js</a>)
+[![Docker Pulls](<a class="reference external" href="https://img.shields.io/docker/pulls/requarks/wiki.svg)](https://hub.docker.com/r/requarks/wiki/">https://img.shields.io/docker/pulls/requarks/wiki.svg)](https://hub.docker.com/r/requarks/wiki/</a>)
+![Build Status](<a class="reference external" href="https://requarks.visualstudio.com/_apis/public/build/definitions/5850c090-02b9-4312-b4ce-0e1f5677b574/6/badge">https://requarks.visualstudio.com/_apis/public/build/definitions/5850c090-02b9-4312-b4ce-0e1f5677b574/6/badge</a>)
+[![Codacy Badge](<a class="reference external" href="https://img.shields.io/codacy/grade/1d0217a3153c4595bdedb322263e55c8/master.svg?style=flat)](https://www.codacy.com/app/Requarks/wiki">https://img.shields.io/codacy/grade/1d0217a3153c4595bdedb322263e55c8/master.svg?style=flat)](https://www.codacy.com/app/Requarks/wiki</a>)
+[![Standard - JavaScript Style Guide](<a class="reference external" href="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/">https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/</a>)
+[![Chat on Gitter](<a class="reference external" href="https://img.shields.io/badge/chat-on_gitter-CC2B5E.svg?style=flat&amp;logo=image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAOCAMAAADUg/YpAAAABlBMVEUAAAD///%2Bl2Z/dAAAAAXRSTlMAQObYZgAAABVJREFUeAFjwAUYYTQByAAh0WicAAAFnwAYeB5bLwAAAABJRU5ErkJggg==)](https://gitter.im/Requarks/wiki">https://img.shields.io/badge/chat-on_gitter-CC2B5E.svg?style=flat&amp;logo=image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAOCAMAAADUg/YpAAAABlBMVEUAAAD///%2Bl2Z/dAAAAAXRSTlMAQObYZgAAABVJREFUeAFjwAUYYTQByAAh0WicAAAFnwAYeB5bLwAAAABJRU5ErkJggg==)](https://gitter.im/Requarks/wiki</a>)
+[![Twitter Follow](<a class="reference external" href="https://img.shields.io/badge/follow-%40requarks-blue.svg?style=flat)](https://twitter.com/requarks">https://img.shields.io/badge/follow-%40requarks-blue.svg?style=flat)](https://twitter.com/requarks</a>)</p>
+<p>##### A modern, lightweight and powerful wiki app built on NodeJS, Git and Markdown</p>
+<p>&lt;/div&gt;</p>
+<ul class="simple">
+<li><p><strong>[Official Website](https://wiki.js.org/)</strong></p></li>
+<li><p><strong>[Getting Started](https://wiki.js.org/get-started.html)</strong></p></li>
+<li><p><strong>[Documentation](https://docs.requarks.io/wiki/)</strong></p></li>
+<li><p>[Requirements](#requirements)</p></li>
+<li><p>[Demo](#demo)</p></li>
+<li><p>[Change Log](<a class="reference external" href="https://github.com/Requarks/wiki/blob/master/CHANGELOG.md">https://github.com/Requarks/wiki/blob/master/CHANGELOG.md</a>)</p></li>
+<li><p>[Feature Requests](<a class="reference external" href="https://requests.requarks.io/wiki">https://requests.requarks.io/wiki</a>)</p></li>
+<li><p>[Milestones](#milestones)</p></li>
+<li><p>[Chat with us](#gitter)</p></li>
+<li><p>[Translations](#translations) <em>(We need your help!)</em></p></li>
+<li><p>[Special Thanks](#special-thanks)</p></li>
+<li><p>[Contribute](#contributors)</p></li>
+</ul>
+<p>&lt;h2 align=”center”&gt;Requirements&lt;/h2&gt;</p>
+<p>Wiki.js can run on virtually all platforms where Node.js can (Windows, Mac, Linux, etc.).</p>
+<ul class="simple">
+<li><p>Node.js <strong>6.11.1</strong> or later</p></li>
+<li><p>MongoDB <strong>3.2</strong> or later</p></li>
+<li><p>Git <strong>2.7.4</strong> or later</p></li>
+<li><p>An empty Git repository (optional)</p></li>
+</ul>
+<p>&gt; Read the full [prerequisites](<a class="reference external" href="https://docs.requarks.io/wiki/prerequisites">https://docs.requarks.io/wiki/prerequisites</a>) article for full details.</p>
+<p>&lt;h2 align=”center”&gt;Cloud Install&lt;/h2&gt;</p>
+<p>[![Deploy to Heroku](<a class="reference external" href="https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/requarks/wiki-heroku">https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/requarks/wiki-heroku</a>)</p>
+<p><em>Docker Cloud, Azure, IBM Bluemix and more coming soon!</em></p>
+<p>&lt;h2 align=”center”&gt;Docker&lt;/h2&gt;</p>
+<p>A docker Wiki.js image is available on Docker Hub:</p>
+<p>[![Docker Image](<a class="reference external" href="https://raw.githubusercontent.com/Requarks/wiki-site/master/assets/images/docker-deploy.png)](https://hub.docker.com/r/requarks/wiki/">https://raw.githubusercontent.com/Requarks/wiki-site/master/assets/images/docker-deploy.png)](https://hub.docker.com/r/requarks/wiki/</a>)</p>
+<p>You can also use a Dockerfile ([see example](<a class="reference external" href="https://github.com/Requarks/wiki/blob/master/tools/Dockerfile">https://github.com/Requarks/wiki/blob/master/tools/Dockerfile</a>)) or Docker Compose ([see example](<a class="reference external" href="https://github.com/Requarks/wiki/blob/master/tools/docker-compose.yml">https://github.com/Requarks/wiki/blob/master/tools/docker-compose.yml</a>)) to run Wiki.js.</p>
+<p>&lt;h2 align=”center”&gt;Demo&lt;/h2&gt;</p>
+<p>Wiki.js documentation site is actually running Wiki.js! [Check it out &amp;raquo;](<a class="reference external" href="https://docs.requarks.io/wiki/">https://docs.requarks.io/wiki/</a>)</p>
+<p>&gt; &lt;span style=”font-size: .8em;”&gt;We do not provide a demo with write access because of potential security / spam issues. The best way to try it is to install it on your own server / computer. It’s easy!&lt;/span&gt;</p>
+<p>&lt;h2 align=”center”&gt;Milestones&lt;/h2&gt;</p>
+<p>Current and upcoming milestones <em>(major features only, see the [changelog](https://github.com/Requarks/wiki/blob/master/CHANGELOG.md) for complete list of features and bug fixes)</em>:</p>
+<p>### 1.0.76 - Stable
+![Progress](<a class="reference external" href="http://progressed.io/bar/100">http://progressed.io/bar/100</a>)</p>
+<p><strong>Note</strong>: As 2.0 is under development, no new features are being developed in the 1.0 branch.</p>
+<ul class="simple">
+<li><p>[x] Fixed: Added missing OAuth2 login button</p></li>
+<li><p>[x] Fixed: Overflow issue in modal sidebar</p></li>
+</ul>
+<p>### 2.0.0 - Dev
+![Progress](<a class="reference external" href="http://progressed.io/bar/47">http://progressed.io/bar/47</a>)</p>
+<dl class="simple">
+<dt><strong>Goals</strong>:</dt><dd><ul class="simple">
+<li><p>Decouple front-end and back-end completely.</p></li>
+<li><p>All operations and queries will be made via GraphQL API.</p></li>
+<li><p>New fully responsive layout, with better customization capabilities.</p></li>
+<li><p>Full localization support, especially for non-latin languages.</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>Release Date</strong>: Q1 2018</p>
+<dl class="simple">
+<dt><strong>Breaking Changes</strong>:</dt><dd><ul class="simple">
+<li><p>MongoDB is being phased out in favor of PostgreSQL + Redis. An upgrade tool will be provided to migrate existing data to the new system.</p></li>
+<li><p>Node.js 8.9 LTS or later is now the minimum supported version.</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>2.0 Milestone</strong>:
+- [x] GraphQL API
+- [x] Migrate to PostgreSQL + Redis datastore
+- [x] Telemetry for analytics and crash reporting (Optional and fully anonymized)
+- [x] Docker support + Auto compile/publish to Docker Hub
+- [x] Support sub-directory installations (e.g. example.com/wiki)
+- [x] Make use of all available CPU cores, distributed jobs queue
+- [x] Modular authentication providers (+ new Auth0, Discord and Twitch providers)
+- [x] Shared kernel for both app and setup
+- [x] Improved installation wizard
+- [x] Modular logging providers
+- [x] New Login page
+- [x] Two-Factor Authentication (2FA)
+- [x] New Navigation Concept
+- [ ] Themes :rocket:
+- [ ] Modular editors :rocket:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>[ ] SimpleMDE (markdown)</p></li>
+<li><p>[ ] Monaco (code)</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>[ ] Modular content parsers/renderers :rocket:</p></li>
+<li><p>[ ] Modular search engines
+- [ ] PostgreSQL search engine</p></li>
+<li><p>[ ] Modular storage engines :rocket:
+- [ ] Git
+- [ ] Local Disk</p></li>
+<li><p>[ ] Multilingual versions of the same page (i18n)</p></li>
+<li><p>[ ] History / Revert to previous version</p></li>
+<li><p>[ ] Persist system settings to database instead of file-based</p></li>
+<li><p>[ ] User Groups + Better permissions management</p></li>
+<li><p>[ ] Tags per document / folder</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">rocket</dt>
+<dd class="field-odd"><p>= Currently in development</p>
+</dd>
+</dl>
+<p><strong>2.1 Milestone</strong>
+- [ ] Comments / Discussion per document
+- [ ] Profile page per user
+- [ ] Preview changes directly from the editor, without saving
+- [ ] Diagrams as code (Mermaid module)
+- [ ] Insert Link modal in Markdown Editor
+- [ ] Additional storage engines</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>[ ] Dropbox</p></li>
+<li><p>[ ] Google Drive</p></li>
+<li><p>[ ] Amazon S3</p></li>
+<li><p>[ ] Azure Blob Storage</p></li>
+<li><p>[ ] Onedrive</p></li>
+<li><p>[ ] Owncloud</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>[ ] Modular Editor: TinyMCE (wysiwyg)</p></li>
+</ul>
+<p><strong>TBD Milestone</strong>
+- [ ] Better simultaneous user editing handling
+- [ ] High Availability support (multiple concurrent instances)</p>
+<p>&lt;h2 align=”center”&gt;Gitter&lt;/h2&gt;</p>
+<p>Want to discuss features, ideas or issues? Join our [gitter channel](<a class="reference external" href="https://gitter.im/Requarks/wiki">https://gitter.im/Requarks/wiki</a>). We are very active and friendly!
+[![Chat on Gitter](<a class="reference external" href="https://img.shields.io/badge/chat-on_gitter-CC2B5E.svg?style=flat-square&amp;logo=image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAOCAMAAADUg/YpAAAABlBMVEUAAAD///%2Bl2Z/dAAAAAXRSTlMAQObYZgAAABVJREFUeAFjwAUYYTQByAAh0WicAAAFnwAYeB5bLwAAAABJRU5ErkJggg==)](https://gitter.im/Requarks/wiki">https://img.shields.io/badge/chat-on_gitter-CC2B5E.svg?style=flat-square&amp;logo=image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAOCAMAAADUg/YpAAAABlBMVEUAAAD///%2Bl2Z/dAAAAAXRSTlMAQObYZgAAABVJREFUeAFjwAUYYTQByAAh0WicAAAFnwAYeB5bLwAAAABJRU5ErkJggg==)](https://gitter.im/Requarks/wiki</a>)</p>
+<p>&lt;h2 align=”center”&gt;Twitter&lt;/h2&gt;</p>
+<p>Follow our Twitter feed to learn about upcoming updates and new releases!
+[![Twitter Follow](<a class="reference external" href="https://img.shields.io/badge/follow-%40requarks-blue.svg?style=flat-square)](https://twitter.com/requarks">https://img.shields.io/badge/follow-%40requarks-blue.svg?style=flat-square)](https://twitter.com/requarks</a>)</p>
+<p>&lt;h2 align=”center”&gt;Translations&lt;/h2&gt;</p>
+<p>We are looking for translators to make Wiki.js available in multiple languages. If your language is not listed below and would like to contribute to this project, contact us on our [gitter channel](<a class="reference external" href="https://gitter.im/Requarks/wiki">https://gitter.im/Requarks/wiki</a>) and we’ll provide you with the necessary tool to add translations, no coding required!</p>
+<p><strong>Languages that are already translated:</strong></p>
+<ul class="simple">
+<li><p>[x] English</p></li>
+<li><p>[x] Chinese - <em>Thanks to [&#64;choicky](https://github.com/choicky)</em></p></li>
+<li><p>[x] Czech - <em>Thanks to [&#64;braniqvranik](https://github.com/braniqvranik)</em></p></li>
+<li><p>[x] Dutch - <em>Thanks to [&#64;weirdwater](https://github.com/weirdwater)</em></p></li>
+<li><p>[x] Estonian - <em>Thanks to [&#64;vonforum](https://github.com/vonforum)</em></p></li>
+<li><p>[x] French</p></li>
+<li><p>[x] German - <em>Thanks to [&#64;joetjengerdes](https://github.com/joetjengerdes), [&#64;MyZeD](https://github.com/MyZeD)</em></p></li>
+<li><p>[x] Greek - <em>Thanks to [&#64;ekchatzi](https://github.com/ekchatzi)</em></p></li>
+<li><p>[x] Italian - <em>Thanks to [&#64;CupCakeArmy](https://github.com/CupCakeArmy)</em></p></li>
+<li><p>[x] Japanese - <em>Thanks to [&#64;johnnyshields](https://github.com/johnnyshields), [&#64;JO3QMA](https://github.com/JO3QMA)</em></p></li>
+<li><p>[x] Korean - <em>Thanks to [&#64;junwonpk](https://github.com/junwonpk)</em></p></li>
+<li><p>[x] Persian - <em>Thanks to [&#64;ashkang](https://github.com/ashkang)</em></p></li>
+<li><p>[x] Portuguese - <em>Thanks to [&#64;felipeplets](https://github.com/felipeplets)</em></p></li>
+<li><p>[x] Russian - <em>Thanks to [&#64;efimlosev](https://github.com/efimlosev)</em></p></li>
+<li><p>[x] Slovak - <em>Thanks to [&#64;braniqvranik](https://github.com/braniqvranik)</em></p></li>
+<li><p>[x] Spanish - <em>Thanks to [&#64;MatiasArriola](https://github.com/MatiasArriola)</em></p></li>
+<li><p>[x] Swedish - <em>Thanks to [&#64;pontus-andersson](https://github.com/pontus-andersson)</em></p></li>
+</ul>
+<p>&lt;h2 align=”center”&gt;Special Thanks&lt;/h2&gt;</p>
+<p>![Browserstack](<a class="reference external" href="https://wiki.js.org/assets/images/logo_browserstack.png">https://wiki.js.org/assets/images/logo_browserstack.png</a>)
+[Browserstack](<a class="reference external" href="https://www.browserstack.com/">https://www.browserstack.com/</a>) for providing access to their great cross-browser testing tools.</p>
+<p>[![DigitalOcean](<a class="reference external" href="https://wiki.js.org/assets/images/logo_digitalocean.png)](https://m.do.co/c/5f7445bfa4d0">https://wiki.js.org/assets/images/logo_digitalocean.png)](https://m.do.co/c/5f7445bfa4d0</a>)
+[DigitalOcean](<a class="reference external" href="https://m.do.co/c/5f7445bfa4d0">https://m.do.co/c/5f7445bfa4d0</a>) for providing hosting of the Wiki.js documentation site.</p>
+<p>&lt;h2 align=”center”&gt;Contributors&lt;/h2&gt;</p>
+<p>This project exists thanks to all the people who contribute. [[Contribute]](<a class="reference external" href="https://github.com/Requarks/wiki/blob/master/CONTRIBUTING.md">https://github.com/Requarks/wiki/blob/master/CONTRIBUTING.md</a>).
+&lt;a href=”<a class="reference external" href="https://github.com/Requarks/wiki/graphs/contributors">https://github.com/Requarks/wiki/graphs/contributors</a>”&gt;&lt;img src=”<a class="reference external" href="https://opencollective.com/wikijs/contributors.svg?width=890">https://opencollective.com/wikijs/contributors.svg?width=890</a>” /&gt;&lt;/a&gt;</p>
+<p>&lt;h2 align=”center”&gt;Backers&lt;/h2&gt;</p>
+<p>Thank you to all our backers! 🙏 [[Become a backer](<a class="reference external" href="https://opencollective.com/wikijs#backer">https://opencollective.com/wikijs#backer</a>)]</p>
+<p>&lt;a href=”<a class="reference external" href="https://opencollective.com/wikijs#backers">https://opencollective.com/wikijs#backers</a>” target=”_blank”&gt;&lt;img src=”<a class="reference external" href="https://opencollective.com/wikijs/backers.svg?width=890">https://opencollective.com/wikijs/backers.svg?width=890</a>”&gt;&lt;/a&gt;</p>
+<p>&lt;h2 align=”center”&gt;Sponsors&lt;/h2&gt;</p>
+<p>Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](<a class="reference external" href="https://opencollective.com/wikijs#sponsor">https://opencollective.com/wikijs#sponsor</a>)]</p>
+<p>&lt;a href=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/0/website">https://opencollective.com/wikijs/sponsor/0/website</a>” target=”_blank”&gt;&lt;img src=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/0/avatar.svg">https://opencollective.com/wikijs/sponsor/0/avatar.svg</a>”&gt;&lt;/a&gt;
+&lt;a href=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/1/website">https://opencollective.com/wikijs/sponsor/1/website</a>” target=”_blank”&gt;&lt;img src=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/1/avatar.svg">https://opencollective.com/wikijs/sponsor/1/avatar.svg</a>”&gt;&lt;/a&gt;
+&lt;a href=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/2/website">https://opencollective.com/wikijs/sponsor/2/website</a>” target=”_blank”&gt;&lt;img src=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/2/avatar.svg">https://opencollective.com/wikijs/sponsor/2/avatar.svg</a>”&gt;&lt;/a&gt;
+&lt;a href=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/3/website">https://opencollective.com/wikijs/sponsor/3/website</a>” target=”_blank”&gt;&lt;img src=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/3/avatar.svg">https://opencollective.com/wikijs/sponsor/3/avatar.svg</a>”&gt;&lt;/a&gt;
+&lt;a href=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/4/website">https://opencollective.com/wikijs/sponsor/4/website</a>” target=”_blank”&gt;&lt;img src=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/4/avatar.svg">https://opencollective.com/wikijs/sponsor/4/avatar.svg</a>”&gt;&lt;/a&gt;
+&lt;a href=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/5/website">https://opencollective.com/wikijs/sponsor/5/website</a>” target=”_blank”&gt;&lt;img src=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/5/avatar.svg">https://opencollective.com/wikijs/sponsor/5/avatar.svg</a>”&gt;&lt;/a&gt;
+&lt;a href=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/6/website">https://opencollective.com/wikijs/sponsor/6/website</a>” target=”_blank”&gt;&lt;img src=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/6/avatar.svg">https://opencollective.com/wikijs/sponsor/6/avatar.svg</a>”&gt;&lt;/a&gt;
+&lt;a href=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/7/website">https://opencollective.com/wikijs/sponsor/7/website</a>” target=”_blank”&gt;&lt;img src=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/7/avatar.svg">https://opencollective.com/wikijs/sponsor/7/avatar.svg</a>”&gt;&lt;/a&gt;
+&lt;a href=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/8/website">https://opencollective.com/wikijs/sponsor/8/website</a>” target=”_blank”&gt;&lt;img src=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/8/avatar.svg">https://opencollective.com/wikijs/sponsor/8/avatar.svg</a>”&gt;&lt;/a&gt;
+&lt;a href=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/9/website">https://opencollective.com/wikijs/sponsor/9/website</a>” target=”_blank”&gt;&lt;img src=”<a class="reference external" href="https://opencollective.com/wikijs/sponsor/9/avatar.svg">https://opencollective.com/wikijs/sponsor/9/avatar.svg</a>”&gt;&lt;/a&gt;
+# markdown_the_source</p>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">FROM THE MACHINE . ORG</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, ADAM MARSHALL DOBRIN.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/README.html.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
